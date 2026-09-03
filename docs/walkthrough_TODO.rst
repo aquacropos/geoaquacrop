@@ -48,20 +48,14 @@ Point all four input paths at the ``processed`` folder from step 1:
 
 .. code-block:: python
 
-   config = gac.simulate.example_config()
-   config.update({
-       'weather_path': '/data/region/processed',
-       'soil_path':    '/data/region/processed',
-       'pheno_path':   '/data/region/processed',
-       'spam_path':    '/data/region/processed',
-       'start_date':   '2011/01/01',
-       'end_date':     '2013/12/31',
-       'crop':         'Wheat_winter',
-       'irrigation':   'rainfed',
-       'output_dir':   'outputs',
-   })
-
-   summary_file, daily_file = gac.simulate.run(config)
+   summary_file, daily_file = gac.simulate.run(
+       data_path='/data/region/processed',   # fills all four input paths
+       start_date='2011/01/01',
+       end_date='2013/12/31',
+       crop='Wheat_winter',
+       irrigation='rainfed',
+       output_dir='outputs',
+   )
 
 ``gac.simulate.input_requirements()`` prints the files this expects, with units
 and naming, if you want to check the preprocessing output first.

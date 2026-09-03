@@ -87,6 +87,19 @@ and the façade then mirrors it exactly::
 Conventions
 -----------
 
+**Entry points take keyword arguments, not configuration objects.** A user
+should be able to call a stage in one expression, with editor completion and
+sensible defaults::
+
+    gac.preprocess.run(domain_shape_path='region.geojson', start_year=2011, ...)
+    gac.simulate.run(data_path='/data/region/processed', start_date='2011/01/01', ...)
+
+Accept an optional ``config=`` dictionary as a first parameter for programmatic
+use, with explicit keyword arguments overriding it, and never mutate a
+dictionary the caller passed in. Where several arguments almost always take the
+same value, offer a shorthand that fills them (``data_path`` fills the four
+input paths in ``simulate``).
+
 **Take arguments, don't read globals.** ``run()`` accepts its configuration as
 a parameter. A function that ignores its caller and reads a module-level dict
 cannot be scripted, tested or documented. Keep a module-level

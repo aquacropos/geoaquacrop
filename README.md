@@ -10,7 +10,7 @@
 import geoaquacrop as gac
 
 gac.preprocess.run(...)        # download & harmonise the input datasets
-gac.simulate.run(config)       # run AquaCrop for every grid cell
+gac.simulate.run(...)          # run AquaCrop for every grid cell
 gac.visualize.launch()         # explore the results
 ```
 
@@ -54,7 +54,8 @@ python -m pip install geoaquacrop_visualize     # visualisation only
 
 ```python
 import geoaquacrop_simulate as simulate
-summary_file, daily_file = simulate.run(config)
+summary_file, daily_file = simulate.run(data_path='...', start_date='...',
+                                        end_date='...', crop='Wheat_winter')
 ```
 
 `gac.simulate.run` and `geoaquacrop_simulate.run` are the same function, so
@@ -79,19 +80,14 @@ gac.preprocess.run(
 )
 
 # 2. run the simulation
-config = gac.simulate.example_config()
-config.update({
-    'weather_path': '/data/high_plains/processed',
-    'soil_path':    '/data/high_plains/processed',
-    'pheno_path':   '/data/high_plains/processed',
-    'spam_path':    '/data/high_plains/processed',
-    'start_date':   '2011/01/01',
-    'end_date':     '2013/12/31',
-    'crop':         'Wheat_winter',
-    'irrigation':   'rainfed',
-    'output_dir':   'outputs',
-})
-summary_file, daily_file = gac.simulate.run(config)
+summary_file, daily_file = gac.simulate.run(
+    data_path='/data/high_plains/processed',   # fills all four input paths
+    start_date='2011/01/01',
+    end_date='2013/12/31',
+    crop='Wheat_winter',
+    irrigation='rainfed',
+    output_dir='outputs',
+)
 
 # 3. explore the results
 gac.visualize.launch()          # then open http://localhost:8050
@@ -106,8 +102,8 @@ gac.preprocess.soil(...)
 gac.preprocess.crop_calendar(...)
 gac.preprocess.crop_area(...)
 
-gac.simulate.run(config)                # simulate; returns (summary, daily)
-gac.simulate.example_config()           # a config template to edit
+gac.simulate.run(data_path=..., ...)    # simulate; returns (summary, daily)
+gac.simulate.example_config()           # inspect every available setting
 gac.simulate.input_requirements()       # print required files and units
 gac.simulate.build_reference(...)       # per-year, region-level yield reference
 gac.simulate.correct(config)            # bias-correct a saved run, no re-run
@@ -139,7 +135,8 @@ for the naming and API contract each stage follows.
 
 ## Citation
 
-If you use GeoAquaCrop in published work, please cite the toolchain.
+If you use GeoAquaCrop in published work, please cite the toolchain and the
+underlying [FAO AquaCrop](https://www.fao.org/aquacrop) model.
 
 ## License
 

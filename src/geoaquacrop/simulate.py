@@ -4,8 +4,10 @@ Façade over the ``geoaquacrop_simulate`` package::
 
     import geoaquacrop as gac
 
-    config = gac.simulate.example_config()
-    summary_file, daily_file = gac.simulate.run(config)
+    summary_file, daily_file = gac.simulate.run(
+        data_path='/data/region/processed',
+        start_date='2011/01/01', end_date='2013/12/31',
+        crop='Wheat_winter', irrigation='rainfed')
 
 Every name here is re-exported from ``geoaquacrop_simulate``; the two are
 interchangeable, so code written against either keeps working.
@@ -16,14 +18,27 @@ __all__ = ["run", "example_config", "input_requirements", "build_reference",
            "correct", "compare", "load_results"]
 
 
-def run(config=None):
+def run(config=None, **kwargs):
     """Run a simulation for every cell in the domain.
+
+    Settings are given as keyword arguments::
+
+        gac.simulate.run(data_path='/data/region/processed',
+                         start_date='2011/01/01', end_date='2013/12/31',
+                         crop='Wheat_winter', irrigation='rainfed')
+
+    ``data_path`` fills all four input paths at once. See
+    :func:`example_config` for every available setting, or the stage
+    documentation for the full reference.
 
     Parameters
     ----------
     config : dict, optional
-        Simulation configuration; see :func:`example_config`. Defaults to the
-        built-in example, which is only useful as a template.
+        A configuration dictionary to start from, for programmatic use; any
+        keyword argument overrides the matching entry.
+    **kwargs
+        Simulation settings such as ``data_path``, ``start_date``,
+        ``end_date``, ``crop``, ``irrigation``, ``output_dir``, ``correction``.
 
     Returns
     -------
@@ -31,11 +46,15 @@ def run(config=None):
         ``(summary_file, daily_file)``, or ``(None, None)`` if the call only
         corrected an already-saved run.
     """
-    return delegate("simulate", "run")(config)
+    return delegate("simulate", "run")(config, **kwargs)
 
 
 def example_config():
-    """Return an editable copy of the example simulation configuration."""
+    """Return the example configuration, to inspect the available settings.
+
+    Not a required step: :func:`run` takes the same settings as keyword
+    arguments. Useful for seeing every key and its default.
+    """
     return delegate("simulate", "example_config")()
 
 
