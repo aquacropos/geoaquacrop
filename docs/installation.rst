@@ -1,0 +1,42 @@
+Installation
+============
+
+Everything at once
+------------------
+
+.. code-block:: bash
+
+   conda create -n geoaquacrop python=3.11
+   conda activate geoaquacrop
+   python -m pip install geoaquacrop
+
+This installs all three sub-packages.
+
+Individual packages
+-------------------
+
+.. code-block:: bash
+
+   python -m pip install geoaquacrop.preprocess      # data preparation only
+   python -m pip install geoaquacrop.simulate          # simulation only
+   python -m pip install geoaquacrop.visualize   # visualisation only
+
+Which do I need?
+----------------
+
+* **Model outputs for a region, starting from nothing** — all three.
+* **Already have gridded climate, soil and crop inputs** — ``geoaquacrop.simulate``
+  alone; see its documentation for the expected file layout.
+* **Already have simulation outputs** — ``geoaquacrop.visualize`` alone.
+* **Building your own pipeline** — each package has a documented Python API and
+  works independently.
+
+Credentials
+-----------
+
+Downloading **past** climate data (AgERA5) needs a free
+`Copernicus CDS account <https://cds.climate.copernicus.eu/>`_ and a personal
+API token. Future climate projections (NASA NEX-GDDP-CMIP6) need no
+credentials. See the
+`preprocessing documentation <https://geoaquacrop-preprocessing.readthedocs.io/en/stable/installation.html>`_
+for details.
