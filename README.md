@@ -139,8 +139,7 @@ for the naming and API contract each stage follows.
 
 ## Citation
 
-If you use GeoAquaCrop in published work, please cite the toolchain and the
-underlying [FAO AquaCrop](https://www.fao.org/aquacrop) model.
+If you use GeoAquaCrop in published work, please cite the toolchain.
 
 ## License
 
