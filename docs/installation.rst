@@ -1,8 +1,8 @@
 Installation
 ============
 
-Everything at once
-------------------
+Everything at once (recommended)
+--------------------------------
 
 .. code-block:: bash
 
@@ -40,3 +40,17 @@ API token. Future climate projections (NASA NEX-GDDP-CMIP6) need no
 credentials. See the
 `preprocessing documentation <https://geoaquacrop_preprocessing.readthedocs.io/en/stable/installation.html>`_
 for details.
+
+Verify
+------
+
+.. code-block:: python
+
+   import geoaquacrop as gac
+
+   print(gac.__version__)
+   print([stage for stage in dir(gac) if not stage.startswith("_")])
+   # ['preprocess', 'simulate', 'visualize']
+
+Each stage loads on first use, so this import stays fast however many stages
+are installed.

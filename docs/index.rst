@@ -1,47 +1,72 @@
 GeoAquaCrop
 ===========
 
-**GeoAquaCrop** is a toolchain for running
-`AquaCrop-OSPy <https://github.com/aquacropos/aquacrop>`_ over large regions in gridded
-format — from raw global datasets through to interactive exploration of
-results.
+**GeoAquaCrop** runs `FAO AquaCrop <https://www.fao.org/aquacrop>`_ over large
+regions in gridded format — from raw global datasets through to interactive
+exploration of results.
 
-It is distributed as three independent packages, plus a meta-package
-(``geoaquacrop``) that installs all three together.
+One import, three stages
+------------------------
+
+.. code-block:: python
+
+   import geoaquacrop as gac
+
+   gac.preprocess.run(...)        # download & harmonise the input datasets
+   gac.simulate.run(config)       # run AquaCrop for every grid cell
+   gac.visualize.launch()         # explore the results
+
+That is the whole API. Each stage is a separately maintained package, but you
+never need to know their names: ``geoaquacrop`` presents them as one library.
 
 .. code-block:: text
 
-   geoaquacrop_preproc  ->  geoaquacrop_simulate  ->  geoaquacrop_visualizer
-   (download & harmonise)   (simulate & correct)  (explore results)
+   gac.preprocess  ->  gac.simulate  ->  gac.visualize
 
 .. list-table::
    :header-rows: 1
-   :widths: 22 50 28
+   :widths: 20 52 28
 
-   * - Package
+   * - Stage
      - What it does
      - Documentation
-   * - **geoaquacrop.preprocess**
+   * - ``gac.preprocess``
      - Downloads and harmonises climate, soil, crop calendar and crop area
        data onto a common grid for a given polygon and period
-     - `readthedocs <https://geoaquacrop.preprocess.readthedocs.io/en/stable/>`_
-   * - **geoaquacrop.simulate**
+     - `readthedocs <https://geoaquacrop-preprocessing.readthedocs.io/en/stable/>`_
+   * - ``gac.simulate``
      - Runs AquaCrop per grid cell in parallel; optional yield bias-correction
        and calibration against observations
-     - `readthedocs <https://geoaquacrop.simulate.readthedocs.io>`_
-   * - **geoaquacrop_visualize**
+     - `readthedocs <https://geoaquacrop-simulate.readthedocs.io>`_
+   * - ``gac.visualize``
      - Interactive Dash/Plotly dashboard for exploring simulation outputs and
        climate inputs
-     - `github.io <https://sehohosseini.github.io/geoaquacrop.visualize/>`_
+     - `github.io <https://sehohosseini.github.io/Geoaquacrop-visualizer/>`_
 
-This site is an overview and signpost. Detailed installation, configuration and
-API reference live with each package.
+Importing ``geoaquacrop`` is cheap: each stage -- and its dependencies -- loads
+only when you first use it. If a stage is not installed, calling it tells you
+exactly what to install.
+
+Each stage also works standalone with the same function names, so
+``gac.simulate.run`` and ``geoaquacrop_simulate.run`` are interchangeable.
 
 .. toctree::
-   :caption: Contents
+   :caption: Getting started
    :maxdepth: 1
 
    installation
-   standard
-   api
    walkthrough_TODO
+
+.. toctree::
+   :caption: Reference
+   :maxdepth: 1
+
+   api
+   standard
+
+Indices and tables
+------------------
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
