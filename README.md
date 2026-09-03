@@ -7,15 +7,15 @@
 **GeoAquaCrop** is a toolchain for gridded crop water productivity modelling. It is distributed as three independent packages plus this meta-package, which installs all three together.
 
 ```
-geoaquacrop-preproc  ->  geoaquacrop-sim  ->  geoaquacrop-visualizer
+geoaquacrop_preproc  ->  geoaquacrop_simulate  ->  geoaquacrop_visualizer
 (download & harmonise)   (simulate & correct)  (explore results)
 ```
 
 | Package | What it does | Docs |
 | ------- | ------------ | ---- |
-| [**geoaquacrop-preproc**](https://github.com/josiasritter/geoaquacrop-preproc-dev) | Downloads and harmonises climate, soil, crop calendar and crop area data onto a common grid for a given polygon and period | [readthedocs](https://geoaquacrop-preprocessing.readthedocs.io/en/stable/) |
-| [**geoaquacrop-sim**](https://github.com/<your-org>/geoaquacrop-sim-dev) | Runs AquaCrop per grid cell in parallel; optional yield bias-correction and calibration against observations | [readthedocs](https://geoaquacrop-simulation.readthedocs.io) |
-| [**geoaquacrop-visualizer**](https://github.com/sehohosseini/Geoaquacrop-visualizer) | Interactive Dash/Plotly dashboard for exploring simulation outputs and climate inputs | [github.io](https://sehohosseini.github.io/Geoaquacrop-visualizer/) |
+| [**geoaquacrop_preproc**](https://github.com/josiasritter/geoaquacrop_preproc-dev) | Downloads and harmonises climate, soil, crop calendar and crop area data onto a common grid for a given polygon and period | [readthedocs](https://geoaquacrop_preprocessing.readthedocs.io/en/stable/) |
+| [**geoaquacrop_simulate**](https://github.com/<your-org>/geoaquacrop_simulate) | Runs AquaCrop per grid cell in parallel; optional yield bias-correction and calibration against observations | [readthedocs](https://geoaquacrop_simulate.readthedocs.io) |
+| [**geoaquacrop_visualizer**](https://github.com/sehohosseini/geoaquacrop_visualize) | Interactive Dash/Plotly dashboard for exploring simulation outputs and climate inputs | [github.io](https://sehohosseini.github.io/geoaquacrop_visualize/) |
 
 ## Installation
 
@@ -31,9 +31,9 @@ skips pre-release versions otherwise.
 That installs all three sub-packages. To install only what you need:
 
 ```bash
-python -m pip install geoaquacrop-preproc      # data preparation only
-python -m pip install geoaquacrop-sim          # simulation only
-python -m pip install geoaquacrop-visualizer   # visualisation only
+python -m pip install geoaquacrop_preproc      # data preparation only
+python -m pip install geoaquacrop_simulate          # simulation only
+python -m pip install geoaquacrop_visualizer   # visualisation only
 ```
 
 **For past climate data** you also need a free [Copernicus CDS account](https://cds.climate.copernicus.eu/) and API token — see the preproc documentation.
@@ -82,17 +82,17 @@ Point the visualiser's configuration at the simulation `outputs/` folder and the
 ## Which package do I need?
 
 - **Just want model outputs for a region?** All three: preproc → sim → visualizer.
-- **Already have gridded climate/soil/crop inputs?** `geoaquacrop-sim` alone — see its documentation for the required file layout.
-- **Already have simulation outputs?** `geoaquacrop-visualizer` alone.
+- **Already have gridded climate/soil/crop inputs?** `geoaquacrop_simulate` alone — see its documentation for the required file layout.
+- **Already have simulation outputs?** `geoaquacrop_visualizer` alone.
 - **Building your own pipeline?** Each package has a documented Python API and can be used independently.
 
 ## Documentation
 
 This page is a signpost. Detailed installation, configuration and API reference live with each package:
 
-- **Preprocessing** — <https://geoaquacrop-preprocessing.readthedocs.io/en/stable/>
-- **Simulation** — <https://geoaquacrop-simulation.readthedocs.io>
-- **Visualisation** — <https://sehohosseini.github.io/Geoaquacrop-visualizer/>
+- **Preprocessing** — <https://geoaquacrop_preprocessing.readthedocs.io/en/stable/>
+- **Simulation** — <https://geoaquacrop_simulate.readthedocs.io>
+- **Visualisation** — <https://sehohosseini.github.io/geoaquacrop_visualize/>
 
 ## Citation
 

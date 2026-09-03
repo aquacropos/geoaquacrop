@@ -11,7 +11,7 @@ It is distributed as three independent packages, plus a meta-package
 
 .. code-block:: text
 
-   geoaquacrop-preproc  ->  geoaquacrop-sim  ->  geoaquacrop-visualizer
+   geoaquacrop_preproc  ->  geoaquacrop_simulate  ->  geoaquacrop_visualizer
    (download & harmonise)   (simulate & correct)  (explore results)
 
 .. list-table::
@@ -29,7 +29,7 @@ It is distributed as three independent packages, plus a meta-package
      - Runs AquaCrop per grid cell in parallel; optional yield bias-correction
        and calibration against observations
      - `readthedocs <https://geoaquacrop.simulate.readthedocs.io>`_
-   * - **geoaquacrop-visualize**
+   * - **geoaquacrop_visualize**
      - Interactive Dash/Plotly dashboard for exploring simulation outputs and
        climate inputs
      - `github.io <https://sehohosseini.github.io/geoaquacrop.visualize/>`_
@@ -42,5 +42,6 @@ API reference live with each package.
    :maxdepth: 1
 
    installation
+   standard
    api
-   walkthrough
+   walkthrough_TODO

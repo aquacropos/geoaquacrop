@@ -29,9 +29,9 @@ classifiers = [
 # The meta-package installs the three components. Version floors only, so each
 # can be released independently without a coordinated bump here.
 dependencies = [
-    "geoaquacrop.preprocess>=0.1",
-    "geoaquacrop.simulate>=0.1",
-    "geoaquacrop.visualize>=0.1",
+    "geoaquacrop_preprocess>=0.1",
+    "geoaquacrop_simulate>=0.1",
+    "geoaquacrop_visualize>=0.1",
 ]
 
 [project.optional-dependencies]
@@ -42,7 +42,7 @@ Homepage = "https://github.com/aquacropos/geoaquacrop"
 Documentation = "https://geoaquacrop.readthedocs.io"
 Preprocessing = "https://geoaquacrop.preprocess.readthedocs.io"
 Simulation = "https://geoaquacrop.simulate.readthedocs.io"
-Visualisation = "https://sehohosseini.github.io/Geoaquacrop-visualizer/"
+Visualisation = "https://sehohosseini.github.io/geoaquacrop_visualize/"
 
 # The umbrella ships the `geoaquacrop` façade package (a thin, lazily-imported
 # wrapper over the three stage packages) plus the dependency metadata.

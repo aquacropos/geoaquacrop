@@ -1,28 +1,22 @@
 """Result visualisation — :mod:`geoaquacrop.visualize`.
 
-Thin façade over ``geoaquacrop.visualize``::
+Façade over the ``geoaquacrop_visualize`` package::
 
     import geoaquacrop as gac
 
-    gac.visualize.launch()        # starts the dashboard, then open the printed URL
+    gac.visualize.launch()      # starts the dashboard, then open the printed URL
 """
-from ._util import require
+from ._util import delegate
 
-
-def _pkg():
-    return require("geoaquacrop.visualize")
+__all__ = ["launch", "run"]
 
 
 def launch(*args, **kwargs):
     """Start the interactive dashboard."""
-    pkg = _pkg()
-    for name in ("launch", "main", "run", "run_app", "start"):
-        fn = getattr(pkg, name, None)
-        if callable(fn):
-            return fn(*args, **kwargs)
-    raise AttributeError(
-        "geoaquacrop_visualizer exposes no launch/main/run entry point; "
-        "run it directly with: python -m geoaquacrop_visualizer")
+    return delegate("visualize", "launch", "run", "main", "run_app", "start")(
+        *args, **kwargs)
 
 
-__all__ = ["launch"]
+def run(*args, **kwargs):
+    """Alias for :func:`launch`, so every stage answers to ``run``."""
+    return launch(*args, **kwargs)
