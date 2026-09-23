@@ -13,7 +13,7 @@ __all__ = ["launch", "run"]
 
 def launch(*args, **kwargs):
     """Start the interactive dashboard."""
-    return delegate("visualize", "launch", "run", "main", "run_app", "start")(
+    return delegate("visualize", "launch")(
         *args, **kwargs)
 
 

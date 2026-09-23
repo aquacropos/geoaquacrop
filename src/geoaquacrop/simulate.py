@@ -60,8 +60,7 @@ def example_config():
 
 def input_requirements():
     """Print the input files a simulation needs, with units and naming."""
-    return delegate("simulate", "input_requirements",
-                    "print_input_requirements")()
+    return delegate("simulate", "input_requirements")()
 
 
 def build_reference(**kwargs):

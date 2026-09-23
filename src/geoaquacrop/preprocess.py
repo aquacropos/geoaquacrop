@@ -20,13 +20,13 @@ __all__ = ["run", "weather", "soil", "crop_calendar", "crop_area"]
 
 def run(*args, **kwargs):
     """Download and harmonise every input dataset for a domain and period."""
-    return delegate("preprocess", "run", "geoaquacrop_preproc", "main")(
+    return delegate("preprocess", "run")(
         *args, **kwargs)
 
 
 def weather(*args, **kwargs):
     """Prepare the climate inputs only."""
-    return delegate("preprocess", "weather", "climate")(*args, **kwargs)
+    return delegate("preprocess", "weather")(*args, **kwargs)
 
 
 def soil(*args, **kwargs):
@@ -36,9 +36,9 @@ def soil(*args, **kwargs):
 
 def crop_calendar(*args, **kwargs):
     """Prepare the crop calendar (planting day, season length) only."""
-    return delegate("preprocess", "crop_calendar", "phenology")(*args, **kwargs)
+    return delegate("preprocess", "crop_calendar")(*args, **kwargs)
 
 
 def crop_area(*args, **kwargs):
     """Prepare the crop area mask only."""
-    return delegate("preprocess", "crop_area", "spam")(*args, **kwargs)
+    return delegate("preprocess", "crop_area")(*args, **kwargs)
