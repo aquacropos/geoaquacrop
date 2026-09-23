@@ -2,7 +2,7 @@
 
 > Run FAO AquaCrop over large regions in gridded format — from raw global datasets to interactive results.
 
-![Python](https://img.shields.io/badge/python-3.11%2B-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/python-3.11%2B-blue) ![License](https://img.shields.io/badge/license-Apache%20License%202.0-blue)
 
 ## One import, three stages
 
