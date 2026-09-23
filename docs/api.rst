@@ -68,7 +68,7 @@ visualize
 
    * - Call
      - Purpose
-   * - ``gac.visualize.launch()``
+   * - ``gac.visualize.run()``
      - Start the interactive dashboard
 
 Example
@@ -100,7 +100,7 @@ Example
    summary_file, daily_file = gac.simulate.run(config)
 
    # 3. explore
-   gac.visualize.launch()
+   gac.visualize.run()
 
 Reference
 ---------

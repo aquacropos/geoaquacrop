@@ -6,7 +6,7 @@ A single, stable entry point to the three toolchain packages::
 
     gac.preprocess.run(...)      # download & harmonise input datasets
     gac.simulate.run(config)          # simulate every grid cell
-    gac.visualize.launch(...)          # explore the results
+    gac.visualize.run(...)          # explore the results
 
 Each stage is also installable and usable on its own
 (``geoaquacrop_preproc``, ``geoaquacrop_sim``, ``geoaquacrop_visualizer``);

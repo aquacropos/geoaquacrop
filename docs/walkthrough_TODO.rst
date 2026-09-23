@@ -77,7 +77,7 @@ See the `simulation documentation <https://geoaquacrop-simulate.readthedocs.io>`
 
 .. code-block:: python
 
-   gac.visualize.launch()      # then open http://localhost:8050
+   gac.visualize.run()      # then open http://localhost:8050
 
 Point the visualiser's configuration at the simulation ``outputs/`` folder and
 the preprocessing ``processed/`` folder.

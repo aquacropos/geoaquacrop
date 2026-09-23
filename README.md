@@ -11,7 +11,7 @@ import geoaquacrop as gac
 
 gac.preprocess.run(...)        # download & harmonise the input datasets
 gac.simulate.run(...)          # run AquaCrop for every grid cell
-gac.visualize.launch()         # explore the results
+gac.visualize.run()         # explore the results
 ```
 
 That is the whole API. Each stage is a separately maintained package, but you
@@ -90,7 +90,7 @@ summary_file, daily_file = gac.simulate.run(
 )
 
 # 3. explore the results
-gac.visualize.launch()          # then open http://localhost:8050
+gac.visualize.run()          # then open http://localhost:8050
 ```
 
 ## What each stage offers
@@ -110,7 +110,7 @@ gac.simulate.correct(config)            # bias-correct a saved run, no re-run
 gac.simulate.compare([...])             # comparison figures and statistics
 gac.simulate.load_results(path)         # saved results as tidy per-year points
 
-gac.visualize.launch()                  # start the dashboard
+gac.visualize.run()                  # start the dashboard
 ```
 
 Importing `geoaquacrop` is cheap: each stage — and its dependencies — loads only

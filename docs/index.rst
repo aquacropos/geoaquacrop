@@ -14,7 +14,7 @@ One import, three stages
 
    gac.preprocess.run(...)        # download & harmonise the input datasets
    gac.simulate.run(...)          # run AquaCrop for every grid cell
-   gac.visualize.launch()         # explore the results
+   gac.visualize.run()         # explore the results
 
 That is the whole API. Each stage is a separately maintained package, but you
 never need to know their names: ``geoaquacrop`` presents them as one library.
