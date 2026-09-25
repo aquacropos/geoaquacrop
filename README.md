@@ -25,7 +25,7 @@ gac.preprocess  ->  gac.simulate  ->  gac.visualize
 | ----- | ------------ | ------------- |
 | `gac.preprocess` | Downloads and harmonises climate, soil, crop calendar and crop area data onto a common grid for a given polygon and period | [readthedocs](https://geoaquacrop-preprocessing.readthedocs.io/en/stable/) |
 | `gac.simulate` | Runs AquaCrop per grid cell in parallel; optional yield bias-correction and calibration against observations | [readthedocs](https://geoaquacrop-simulate.readthedocs.io) |
-| `gac.visualize` | Interactive Dash/Plotly dashboard for exploring simulation outputs and climate inputs | [github.io](https://sehohosseini.github.io/Geoaquacrop-visualizer/) |
+| `gac.visualize` | Interactive Dash/Plotly dashboard for exploring simulation outputs and climate inputs | [readthedocs](https://geoaquacrop-visualize.readthedocs.io/en/latest/) |
 
 ## Installation
 
