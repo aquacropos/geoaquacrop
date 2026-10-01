@@ -128,7 +128,7 @@ what to install.
 - **This toolchain** — <https://geoaquacrop.readthedocs.io>
 - **Preprocessing** — <https://geoaquacrop-preprocessing.readthedocs.io/en/stable/>
 - **Simulation** — <https://geoaquacrop-simulate.readthedocs.io>
-- **Visualisation** — <https://sehohosseini.github.io/Geoaquacrop-visualizer/>
+- **Visualisation** — <https://geoaquacrop-visualize.readthedocs.io/en/latest/>
 
 Contributors: see [the stage package standard](https://geoaquacrop.readthedocs.io/en/latest/standard.html)
 for the naming and API contract each stage follows.
