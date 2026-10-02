@@ -9,7 +9,7 @@ A single, stable entry point to the three toolchain packages::
     gac.visualize.run(...)          # explore the results
 
 Each stage is also installable and usable on its own
-(``geoaquacrop_preproc``, ``geoaquacrop_sim``, ``geoaquacrop_visualizer``);
+(``geoaquacrop_preprocess``, ``geoaquacrop_simulate``, ``geoaquacrop_visualize``);
 this package is a thin, curated façade over them, so the names here stay
 stable even if the internals move.
 
