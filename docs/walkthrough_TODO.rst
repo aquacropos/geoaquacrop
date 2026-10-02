@@ -83,7 +83,7 @@ Point the visualiser's configuration at the simulation ``outputs/`` folder and
 the preprocessing ``processed/`` folder.
 
 See the `visualiser overview
-<https://sehohosseini.github.io/Geoaquacrop-visualizer/>`_.
+<https://geoaquacrop-visualize.readthedocs.io/en/latest/>`_.
 
 Keeping the stages consistent
 -----------------------------

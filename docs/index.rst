@@ -41,7 +41,7 @@ never need to know their names: ``geoaquacrop`` presents them as one library.
    * - ``gac.visualize``
      - Interactive Dash/Plotly dashboard for exploring simulation outputs and
        climate inputs
-     - `github.io <https://sehohosseini.github.io/Geoaquacrop-visualizer/>`_
+     - `readthedocs <https://geoaquacrop-visualize.readthedocs.io/en/latest/>`_
 
 Importing ``geoaquacrop`` is cheap: each stage -- and its dependencies -- loads
 only when you first use it. If a stage is not installed, calling it tells you

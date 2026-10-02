@@ -17,17 +17,17 @@ Individual packages
 
 .. code-block:: bash
 
-   python -m pip install geoaquacrop.preprocess      # data preparation only
-   python -m pip install geoaquacrop.simulate          # simulation only
-   python -m pip install geoaquacrop.visualize   # visualisation only
+   python -m pip install geoaquacrop_preprocess      # data preparation only
+   python -m pip install geoaquacrop_simulate          # simulation only
+   python -m pip install geoaquacrop_visualize   # visualisation only
 
 Which do I need?
 ----------------
 
 * **Model outputs for a region, starting from nothing** — all three.
-* **Already have gridded climate, soil and crop inputs** — ``geoaquacrop.simulate``
+* **Already have gridded climate, soil and crop inputs** — ``gac.simulate``
   alone; see its documentation for the expected file layout.
-* **Already have simulation outputs** — ``geoaquacrop.visualize`` alone.
+* **Already have simulation outputs** — ``gac.visualize`` alone.
 * **Building your own pipeline** — each package has a documented Python API and
   works independently.
 

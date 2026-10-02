@@ -46,8 +46,8 @@ docs = ["sphinx>=7", "furo"]
 [project.urls]
 Homepage = "https://github.com/aquacropos/geoaquacrop"
 Documentation = "https://geoaquacrop.readthedocs.io"
-Preprocessing = "https://geoaquacrop.preprocess.readthedocs.io"
-Simulation = "https://geoaquacrop.simulate.readthedocs.io"
+Preprocessing = "https://geoaquacrop-preprocessing.readthedocs.io/en/stable/"
+Simulation = "https://geoaquacrop-simulate.readthedocs.io"
 Visualisation = "https://geoaquacrop-visualize.readthedocs.io"
 
 # The umbrella ships the `geoaquacrop` façade package (a thin, lazily-imported
