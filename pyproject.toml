@@ -1,20 +1,26 @@
 [build-system]
-requires = ["setuptools>=77", "wheel"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "geoaquacrop"
-version = "0.1.0b1"
+version = "0.1.0"
 description = "Unified entry point to the GeoAquaCrop toolchain: preprocessing, gridded simulation, and visualisation"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "Apache-2.0"
 license-files = ["LICENSE"]
 authors = [
-    { name = "Josias Ritter" },
+    { name = "Josias Lang-Ritter" },
     { name = "Chris Bowden" },
-    { name = "Seho Hosseini" },
+    { name = "Seyed Hosseini" },
+    { name = "Henrikki Tenkanen" },
     { name = "Tim Foster" },
+    ]
+maintainers = [
+    { name = "Josias Lang-Ritter", email = "josias.lang-ritter@aalto.fi" },
+    { name = "Chris Bowden", email = "christopher.bowden@manchester.ac.uk" },
+    { name = "Seyed Hosseini", email = "seyed.h.hosseini@aalto.fi" },
 ]
 keywords = ["aquacrop", "crop model", "water productivity", "gridded", "agriculture"]
 
@@ -42,7 +48,7 @@ Homepage = "https://github.com/aquacropos/geoaquacrop"
 Documentation = "https://geoaquacrop.readthedocs.io"
 Preprocessing = "https://geoaquacrop.preprocess.readthedocs.io"
 Simulation = "https://geoaquacrop.simulate.readthedocs.io"
-Visualisation = "https://sehohosseini.github.io/geoaquacrop_visualize/"
+Visualisation = "https://geoaquacrop-visualize.readthedocs.io"
 
 # The umbrella ships the `geoaquacrop` façade package (a thin, lazily-imported
 # wrapper over the three stage packages) plus the dependency metadata.
