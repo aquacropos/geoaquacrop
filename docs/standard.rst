@@ -33,8 +33,7 @@ Naming
 The rule is one word, a verb, and **one spelling everywhere**:
 ``geoaquacrop_simulate`` is the repository, the distribution, and the import
 package. The façade attribute drops the prefix (``gac.simulate``), which is the
-only place the name is written differently. No abbreviations (``sim``, ``preproc``) and no agent nouns
-(``visualizer``).
+only place the name is written differently.
 
 Underscores rather than hyphens, because Python import names cannot contain a
 hyphen (it would parse as subtraction) while distribution names accept either.
