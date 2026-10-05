@@ -20,7 +20,7 @@ authors = [
 maintainers = [
     { name = "Josias Lang-Ritter", email = "josias.lang-ritter@aalto.fi" },
     { name = "Chris Bowden", email = "christopher.bowden@manchester.ac.uk" },
-    { name = "Seyed Hosseini", email = "seyed.h.hosseini@aalto.fi" },
+    { name = "Seyed Hossein Hosseini", email = "seyed.h.hosseini@aalto.fi" },
 ]
 keywords = ["aquacrop", "crop model", "water productivity", "gridded", "agriculture"]
 
