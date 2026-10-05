@@ -1,6 +1,6 @@
 # GeoAquaCrop
 
-> Run FAO AquaCrop over large regions in gridded format — from raw global datasets to interactive results.
+> Run AquaCrop-OSPy over large regions in gridded format — from raw global datasets to interactive results.
 
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue) ![License](https://img.shields.io/badge/license-Apache%20License%202.0-blue)
 
@@ -136,7 +136,7 @@ for the naming and API contract each stage follows.
 ## Citation
 
 If you use GeoAquaCrop in published work, please cite the toolchain and the
-underlying [FAO AquaCrop](https://www.fao.org/aquacrop) model.
+underlying [AquaCrop-OSPy](https://github.com/aquacropos/aquacrop) model.
 
 ## License
 
