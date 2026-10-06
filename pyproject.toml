@@ -46,7 +46,7 @@ docs = ["sphinx>=7", "furo"]
 [project.urls]
 Homepage = "https://github.com/aquacropos/geoaquacrop"
 Documentation = "https://geoaquacrop.readthedocs.io"
-Preprocessing = "https://geoaquacrop-preprocessing.readthedocs.io/en/stable/"
+Preprocessing = "https://geoaquacrop-preprocessing.readthedocs.io/en/latest/"
 Simulation = "https://geoaquacrop-simulate.readthedocs.io"
 Visualisation = "https://geoaquacrop-visualize.readthedocs.io"
 

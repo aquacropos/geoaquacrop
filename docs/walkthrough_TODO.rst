@@ -39,7 +39,7 @@ To re-run a single dataset rather than all of them:
    gac.preprocess.weather(...)
 
 See the `preprocessing quick start
-<https://geoaquacrop-preprocessing.readthedocs.io/en/stable/quickstart.html>`_.
+<https://geoaquacrop-preprocessing.readthedocs.io/en/latest/quickstart.html>`_.
 
 2. Run the simulation
 ---------------------
