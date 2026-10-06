@@ -19,7 +19,7 @@ dependencies of a stage are only loaded when you first touch that stage.
 from importlib import import_module as _import_module
 
 __all__ = ["preprocess", "simulate", "visualize"]
-__version__ = "0.1.0b1"
+__version__ = "0.1.0"
 
 _SUBMODULES = frozenset(__all__)
 

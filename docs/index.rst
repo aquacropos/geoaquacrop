@@ -1,7 +1,7 @@
 GeoAquaCrop
 ===========
 
-**GeoAquaCrop** runs `FAO AquaCrop <https://www.fao.org/aquacrop>`_ over large
+**GeoAquaCrop** runs `AquaCrop-OSPy <https://github.com/aquacropos/aquacrop>`_ over large
 regions in gridded format — from raw global datasets through to interactive
 exploration of results.
 
@@ -16,8 +16,7 @@ One import, three stages
    gac.simulate.run(...)          # run AquaCrop for every grid cell
    gac.visualize.run()         # explore the results
 
-That is the whole API. Each stage is a separately maintained package, but you
-never need to know their names: ``geoaquacrop`` presents them as one library.
+That is the whole API. Each stage is a separately maintained package, but: ``geoaquacrop`` presents them as one library.
 
 .. code-block:: text
 

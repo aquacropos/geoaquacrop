@@ -49,7 +49,7 @@ def require(stage):
             f"not installed.\n"
             f"    python -m pip install {spec['distribution']}\n"
             f"or install the whole toolchain with:\n"
-            f"    python -m pip install --pre geoaquacrop"
+            f"    python -m pip install geoaquacrop"
         ) from exc
 
 
