@@ -24,7 +24,7 @@ autodoc_mock_imports = ["geoaquacrop.preprocess", "geoaquacrop.simulate",
                         "geoaquacrop.visualize"]
 
 intersphinx_mapping = {
-    "preprocess": ("https://geoaquacrop-preprocess.readthedocs.io/en/stable/", None),
+    "preprocess": ("https://geoaquacrop-preprocess.readthedocs.io/en/latest/", None),
     "simulate": ("https://geoaquacrop-simulate.readthedocs.io/en/stable/", None),
     "visualize": ("https://geoaquacrop-visualize.readthedocs.io/en/latest/", None),
 }

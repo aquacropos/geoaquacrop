@@ -21,22 +21,21 @@ never need to know their names: `geoaquacrop` presents them as one library.
 gac.preprocess  ->  gac.simulate  ->  gac.visualize
 ```
 
-| Stage | What it does | Documentation |
-| ----- | ------------ | ------------- |
-| `gac.preprocess` | Downloads and harmonises climate, soil, crop calendar and crop area data onto a common grid for a given polygon and period | [readthedocs](https://geoaquacrop-preprocessing.readthedocs.io/en/stable/) |
-| `gac.simulate` | Runs AquaCrop per grid cell in parallel; optional yield bias-correction and calibration against observations | [readthedocs](https://geoaquacrop-simulate.readthedocs.io) |
-| `gac.visualize` | Interactive Dash/Plotly dashboard for exploring simulation outputs and climate inputs | [readthedocs](https://geoaquacrop-visualize.readthedocs.io/en/latest/) |
+| Stage | What it does | Repository | Documentation |
+| ----- | ------------ | ---------- | ------------- |
+| `gac.preprocess` | Downloads and harmonises climate, soil, crop calendar and crop area data onto a common grid for a given polygon and period | [geoaquacrop_preprocess](https://github.com/aquacropos/geoaquacrop_preprocess) | [readthedocs](https://geoaquacrop-preprocess.readthedocs.io/en/latest/) |
+| `gac.simulate` | Runs AquaCrop per grid cell in parallel; optional yield bias-correction and calibration against observations | [geoaquacrop_simulate](https://github.com/aquacropos/geoaquacrop_simulate) | [readthedocs](https://geoaquacrop-simulate.readthedocs.io) |
+| `gac.visualize` | Interactive Dash/Plotly dashboard for exploring simulation outputs and climate inputs | [geoaquacrop_visualize](https://github.com/aquacropos/geoaquacrop_visualize) | [readthedocs](https://geoaquacrop-visualize.readthedocs.io/en/latest/) |
 
 ## Installation
 
 ```bash
 conda create -n geoaquacrop python=3.11
 conda activate geoaquacrop
-python -m pip install --pre geoaquacrop
+python -m pip install geoaquacrop
 ```
 
-The `--pre` flag is needed while the toolchain is in beta (`0.1.0b1`); pip skips
-pre-release versions otherwise. This installs all three stages.
+This installs all three stages.
 
 **For past climate data** you also need a free [Copernicus CDS account](https://cds.climate.copernicus.eu/)
 and API token — see the preprocessing documentation.
@@ -126,7 +125,7 @@ what to install.
 ## Documentation
 
 - **This toolchain** — <https://geoaquacrop.readthedocs.io>
-- **Preprocessing** — <https://geoaquacrop-preprocessing.readthedocs.io/en/stable/>
+- **Preprocessing** — <https://geoaquacrop-preprocess.readthedocs.io/en/latest/>
 - **Simulation** — <https://geoaquacrop-simulate.readthedocs.io>
 - **Visualisation** — <https://geoaquacrop-visualize.readthedocs.io/en/latest/>
 
@@ -137,6 +136,10 @@ for the naming and API contract each stage follows.
 
 If you use GeoAquaCrop in published work, please cite the toolchain and the
 underlying [AquaCrop-OSPy](https://github.com/aquacropos/aquacrop) model.
+
+A preprint will be published soon. Until then, please cite:
+
+> Láng-Ritter, J., Bowden, C., Hosseini, S., Alkio, E., Tenkanen, H. & Foster, T. GeoAquaCrop: Large-scale agricultural crop modelling using open global data
 
 ## License
 

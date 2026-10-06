@@ -38,7 +38,7 @@ Downloading **past** climate data (AgERA5) needs a free
 `Copernicus CDS account <https://cds.climate.copernicus.eu/>`_ and a personal
 API token. Future climate projections (NASA NEX-GDDP-CMIP6) need no
 credentials. See the
-`preprocessing documentation <https://geoaquacrop-preprocess.readthedocs.io/en/stable/installation.html>`_
+`preprocessing documentation <https://geoaquacrop-preprocess.readthedocs.io/en/latest/installation.html>`_
 for details.
 
 Verify
