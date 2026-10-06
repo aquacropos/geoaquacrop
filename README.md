@@ -27,7 +27,7 @@ gac.preprocess  ->  gac.simulate  ->  gac.visualize
 
 | Stage | What it does | Repository | Documentation |
 | ----- | ------------ | ---------- | ------------- |
-| `gac.preprocess` | Downloads and harmonises climate, soil, crop calendar and crop area data onto a common grid for a given polygon and period | [geoaquacrop_preprocess](https://github.com/aquacropos/geoaquacrop_preprocess) | [readthedocs](https://geoaquacrop-preprocessing.readthedocs.io/en/latest/) |
+| `gac.preprocess` | Downloads and harmonises climate, soil, crop calendar and crop area data onto a common grid for a given polygon and period | [geoaquacrop_preprocess](https://github.com/aquacropos/geoaquacrop_preprocess) | [readthedocs](https://geoaquacrop-preprocess.readthedocs.io/en/latest/) |
 | `gac.simulate` | Runs AquaCrop per grid cell in parallel; optional yield bias-correction and calibration against observations | [geoaquacrop_simulate](https://github.com/aquacropos/geoaquacrop_simulate) | [readthedocs](https://geoaquacrop-simulate.readthedocs.io) |
 | `gac.visualize` | Interactive Dash/Plotly dashboard for exploring simulation outputs and climate inputs | [geoaquacrop_visualize](https://github.com/aquacropos/geoaquacrop_visualize) | [readthedocs](https://geoaquacrop-visualize.readthedocs.io/en/latest/) |
 
@@ -129,7 +129,7 @@ what to install.
 ## Documentation
 
 - **This toolchain** — <https://geoaquacrop.readthedocs.io>
-- **Preprocessing** — <https://geoaquacrop-preprocessing.readthedocs.io/en/latest/>
+- **Preprocessing** — <https://geoaquacrop-preprocess.readthedocs.io/en/latest/>
 - **Simulation** — <https://geoaquacrop-simulate.readthedocs.io>
 - **Visualisation** — <https://geoaquacrop-visualize.readthedocs.io/en/latest/>
 

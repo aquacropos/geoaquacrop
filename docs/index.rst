@@ -32,7 +32,7 @@ That is the whole API. Each stage is a separately maintained package, but: ``geo
    * - ``gac.preprocess``
      - Downloads and harmonises climate, soil, crop calendar and crop area
        data onto a common grid for a given polygon and period
-     - `readthedocs <https://geoaquacrop-preprocessing.readthedocs.io/en/latest/>`_
+     - `readthedocs <https://geoaquacrop-preprocess.readthedocs.io/en/latest/>`_
    * - ``gac.simulate``
      - Runs AquaCrop per grid cell in parallel; optional yield bias-correction
        and calibration against observations
