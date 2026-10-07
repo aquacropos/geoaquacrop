@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/aquacropos/geoaquacrop/main/docs/_static/logo.png"
-       alt="" width="130">
+       alt="" width="360">
 </p>
 
 <p align="center">Run AquaCrop-OSPy over large regions in gridded format — from raw global datasets to interactive results.</p>
