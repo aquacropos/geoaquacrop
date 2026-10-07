@@ -1,8 +1,17 @@
-# GeoAquaCrop
+<p align="center">
+  <img src="https://raw.githubusercontent.com/aquacropos/geoaquacrop/main/docs/_static/logo.png"
+       alt="" width="130">
+</p>
 
-> Run AquaCrop-OSPy over large regions in gridded format — from raw global datasets to interactive results.
+<p align="center">Run AquaCrop-OSPy over large regions in gridded format — from raw global datasets to interactive results.</p>
 
-![Python](https://img.shields.io/badge/python-3.11%2B-blue) ![License](https://img.shields.io/badge/license-Apache%20License%202.0-blue)
+<p align="center">
+  <a href="https://pypi.org/project/geoaquacrop/"><img src="https://img.shields.io/pypi/v/geoaquacrop" alt="PyPI"></a>
+  <a href="https://pypi.org/project/geoaquacrop/"><img src="https://img.shields.io/pypi/pyversions/geoaquacrop" alt="Python"></a>
+  <a href="https://geoaquacrop.readthedocs.io/en/stable/"><img src="https://img.shields.io/readthedocs/geoaquacrop" alt="Docs"></a>
+  <a href="https://github.com/aquacropos/geoaquacrop/actions/workflows/tests.yml"><img src="https://github.com/aquacropos/geoaquacrop/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
+  <a href="https://github.com/aquacropos/geoaquacrop/blob/main/LICENSE"><img src="https://img.shields.io/badge/licence-Apache%202.0-blue" alt="Licence"></a>
+</p>
 
 ## One import, three stages
 
