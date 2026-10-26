@@ -38,7 +38,7 @@ classifiers = [
 # `pip install -U geoaquacrop`.
 dependencies = [
     "geoaquacrop_preprocess>=0.1.4",
-    "geoaquacrop_simulate>=0.1",
+    "geoaquacrop_simulate>=0.1.2",
     "geoaquacrop_visualize>=0.1",
 ]
 
