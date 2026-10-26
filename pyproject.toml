@@ -37,7 +37,7 @@ classifiers = [
 # when a stage release contains fixes that existing installs should pick up on
 # `pip install -U geoaquacrop`.
 dependencies = [
-    "geoaquacrop_preprocess>=0.1.3",
+    "geoaquacrop_preprocess>=0.1.4",
     "geoaquacrop_simulate>=0.1",
     "geoaquacrop_visualize>=0.1",
 ]
