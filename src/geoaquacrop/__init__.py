@@ -17,9 +17,15 @@ Submodules are imported lazily: ``import geoaquacrop`` is cheap, and the heavy
 dependencies of a stage are only loaded when you first touch that stage.
 """
 from importlib import import_module as _import_module
+from importlib.metadata import PackageNotFoundError as _PackageNotFoundError
+from importlib.metadata import version as _version
 
 __all__ = ["preprocess", "simulate", "visualize"]
-__version__ = "0.1.0"
+
+try:
+    __version__ = _version("geoaquacrop")
+except _PackageNotFoundError:  # pragma: no cover - package not installed (e.g. running from source)
+    __version__ = "0.0.0+unknown"
 
 _SUBMODULES = frozenset(__all__)
 

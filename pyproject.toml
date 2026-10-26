@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "geoaquacrop"
-version = "0.1.1"
+version = "0.1.2"
 description = "Unified entry point to the GeoAquaCrop toolchain: preprocessing, gridded simulation, and visualisation"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -33,9 +33,11 @@ classifiers = [
 ]
 
 # The meta-package installs the three components. Version floors only, so each
-# can be released independently without a coordinated bump here.
+# can be released independently without a coordinated bump here. Raise a floor
+# when a stage release contains fixes that existing installs should pick up on
+# `pip install -U geoaquacrop`.
 dependencies = [
-    "geoaquacrop_preprocess>=0.1",
+    "geoaquacrop_preprocess>=0.1.3",
     "geoaquacrop_simulate>=0.1",
     "geoaquacrop_visualize>=0.1",
 ]
